@@ -1,4 +1,4 @@
-# React Best Practicess
+# React Best Practices
 
 
 
