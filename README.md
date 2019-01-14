@@ -147,7 +147,8 @@ Normalized data structures by Id (Relational Table Model)
 
 #### Naming Convention ####
 
-**Components**
+#### Components ####
+
 **From:** https://hackernoon.com/react-components-naming-convention-%EF%B8%8F-b50303551505
 
 [Domain]|[Page/Context]|ComponentName|[Type]
