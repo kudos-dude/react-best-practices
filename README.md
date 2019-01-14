@@ -1,7 +1,6 @@
 # React Best Practices
 
 
-
 ## Architecture
 
 ### Routing
