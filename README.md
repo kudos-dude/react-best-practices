@@ -151,6 +151,14 @@ Normalized data structures by Id (Relational Table Model)
 
 [Domain]|[Page/Context]|ComponentName|[Type]
 
+Examples:
+
+ACommunityAddToShortListButton - [Domain][ComponentName][Type]  
+SideBar - [ComponentName]  
+SideBarSwitch - [ComponentName][Type]  
+ChatConversation - [Page/Context][ComponentName]  
+ChatConversationName - [Page/Context][ComponentName]  
+
 ### Component Creation
 
 - Write a stateless functional component first
