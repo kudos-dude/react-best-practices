@@ -1,10 +1,13 @@
 # React Best Practices #
-### A comprehensive refrence guide to kickstart your React architecting career! ###
+
+A comprehensive refrence guide to kickstart your React architecting career!
 
 ## Architecture ##
+
 ### Routing ###
 
 ### Functional Paradigm ###
+
 - Pure Components
   - fn(state, props) == UI
   - No local state other than:
@@ -12,7 +15,7 @@
     - UI control that doesn't involve business logic or dependent on other components
     - Extremely trivial UI related variables that won't cause side effects
     - Standalone libraries
-    - Flux pattern (uni-directional)
+- Flux pattern (uni-directional)
 
 ### State Structure ###
 
@@ -20,6 +23,7 @@
 
 Normalized data structures by Id (Relational Table Model)
 
+```
 {
   posts: {
     byId: {
@@ -88,9 +92,11 @@ Normalized data structures by Id (Relational Table Model)
   simpleDomainData1: {...},
   simpleDomainData2: {...},
 }
+```
 
 ### Folder Structure ###
 
+```
 .
 ├── /android/
 ├── /ios/
@@ -116,9 +122,11 @@ Normalized data structures by Id (Relational Table Model)
 ├── /tools/
 ├── /node_modules/
 └── package.json
+```
 
 #### Redux "Ducks" ####
 
+```
 .
 ├── /redux/
     └── /MyDuck/
@@ -131,6 +139,7 @@ Normalized data structures by Id (Relational Table Model)
     |   ├── types.js
     |   └── utils.js
 └── commonTypes.js
+```
 
 ## Best Practices and Coding Style ##
 
