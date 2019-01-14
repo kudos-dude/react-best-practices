@@ -1,12 +1,12 @@
-# React Best Practices #
+# React Best Practices
 
-A comprehensive refrence guide to kickstart your React architecting career!
 
-## Architecture ##
 
-### Routing ###
+## Architecture
 
-### Functional Paradigm ###
+### Routing
+
+### Functional Paradigm
 
 - Pure Components
   - fn(state, props) == UI
@@ -17,13 +17,13 @@ A comprehensive refrence guide to kickstart your React architecting career!
     - Standalone libraries
 - Flux pattern (uni-directional)
 
-### State Structure ###
+### State Structure
 
 **From:** https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape
 
 Normalized data structures by Id (Relational Table Model)
 
-```
+```javascript
 {
   posts: {
     byId: {
@@ -94,7 +94,7 @@ Normalized data structures by Id (Relational Table Model)
 }
 ```
 
-### Folder Structure ###
+### Folder Structure
 
 ```
 .
@@ -124,7 +124,7 @@ Normalized data structures by Id (Relational Table Model)
 └── package.json
 ```
 
-#### Redux "Ducks" ####
+#### Redux "Ducks"
 
 ```
 .
@@ -141,19 +141,17 @@ Normalized data structures by Id (Relational Table Model)
 └── commonTypes.js
 ```
 
-## Best Practices and Coding Style ##
+## Best Practices and Coding Style
 
-### Rules of Thumb ###
+### Naming Convention
 
-#### Naming Convention ####
-
-#### Components ####
+#### Components
 
 **From:** https://hackernoon.com/react-components-naming-convention-%EF%B8%8F-b50303551505
 
 [Domain]|[Page/Context]|ComponentName|[Type]
 
-#### Component Creation ####
+### Component Creation
 
 - Write a stateless functional component first
   - if (component requires state, life-cycle, or Redux) Make stateful class
@@ -163,29 +161,30 @@ Normalized data structures by Id (Relational Table Model)
     - if (!app dependent i.e. primitive) Move to lib folder
 - Avoid re-rendering component if possible
 
-#### Redux Work ####
+### Redux Work
 
+- Use Action Creators
 - Use "Duck's" pattern
   - Details here: https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be
 
-## Styling ##
+## Styling
 
-## Testing ##
+## Testing
 
 **From:** https://github.com/kylpo/react-playbook/blob/master/best-practices/react.md
 
 Write component tests that accomplish the following goals (from [Getting Started with TDD in React](https://semaphoreci.com/community/tutorials/getting-started-with-tdd-in-react?utm_source=javascriptweekly&utm_medium=email))
 
-- it renders
-- it renders the correct thing
-  - default props
-  - varied props
-- it renders the different states
-- test events
-- test edge cases
+- It renders
+- It renders the correct thing
+  - Default props
+  - Varied props
+- It renders the different states
+- Test events
+- Test edge cases
   - e.g. something that uses an array should be thrown an empty array
 
-## Resources ##
+## Resources
 
 **Good Starting Points:**
 https://github.com/markerikson/react-redux-links/blob/master/react-architecture.md
