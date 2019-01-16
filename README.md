@@ -295,7 +295,7 @@ return (
   <button className={classes} />
 
   vs
-  
+
   <button className={`button-default-style ${isActive ? "active" : ""}`} />
 );
 ```
@@ -317,14 +317,19 @@ Date/Time related formatting
 **Good Starting Points:**
 https://github.com/markerikson/react-redux-links/blob/master/react-architecture.md
 
-**Presentational vs Container Components:**
-https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0
+### Topics A-Z
 
 **Folder Structure:**  
 https://github.com/kylpo/react-playbook/blob/master/component-architecture/3_Multiple-Components.md
 
+**Presentational vs Container Components:**
+https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0
+
 **Routing:**  
 https://medium.com/@algfry12/react-router-best-practices-9c564388f4d3
+
+**Symbolic Linking (i.e. get rid of import '../../../etc.')**  
+https://medium.com/@sherryhsu/how-to-change-relative-paths-to-absolute-paths-for-imports-32ba6cce18a5
 
 **Utilities:**  
 https://blog.bitsrc.io/11-javascript-utility-libraries-you-should-know-in-2018-3646fb31ade
