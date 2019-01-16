@@ -294,6 +294,8 @@ let classes = classnames('sd-date', {
 return (
   <button className={classes} />
 
+  vs
+  
   <button className={`button-default-style ${isActive ? "active" : ""}`} />
 );
 ```
