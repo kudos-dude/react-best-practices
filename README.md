@@ -1,21 +1,34 @@
 # React Best Practices
 
+This repo is for the purposes of a high-level view of React architecture and best practices. As this repo grows, more ideas will be introduced and comparisons will be made with pros and cons.
 
+Being that this is a public repo, I hope that people will not only take what they can from the repo's information, but contribute as well. Feel free to submit pull requests and I will add your information to the document.
+
+Forking this repo is great if you want to create your own repo with your decisions, using this as a starting point.
 
 ## Architecture
 
 ### Routing
 
+**React Router**  
+https://github.com/ReactTraining/react-router
+
+Guide:  
+https://reacttraining.com/react-router/web/guides/quick-start
+
 ### Functional Paradigm
 
 - Pure Components
   - fn(state, props) == UI
-  - No local state other than:
-    - Animation/triggering of CSS Classes
-    - UI control that doesn't involve business logic or dependent on other components
-    - Extremely trivial UI related variables that won't cause side effects
-    - Standalone libraries
+
+  - Local state suggestions from: https://medium.com/@robftw/characteristics-of-an-ideal-react-architecture-883b9b92be0b
+    - No local state other than:
+      - Animation/triggering of CSS Classes
+      - UI control that doesn't involve business logic or dependent on other components
+      - Extremely trivial UI related variables that won't cause side effects
+      - Standalone libraries
 - Flux pattern (uni-directional)
+  - **Redux:** https://redux.js.org/
 
 ### State Structure
 
@@ -93,6 +106,7 @@ Normalized data structures by Id (Relational Table Model)
   simpleDomainData2: {...},
 }
 ```
+Removes the deeply nested structures as your state grows in size and keeps components from re-rendering accidentally.
 
 ### Folder Structure
 
@@ -107,22 +121,43 @@ Normalized data structures by Id (Relational Table Model)
 │   ├── /videos/
 |
 ├── /app
-│   ├── /redux/
+│   ├── /redux/  // See "Ducks"
 │   ├── /scenes/
 │   |   ├── /App/
-│   |       ├── /_/
-│   |       ├── /App.js
-│   |       └── /index.js
+│   |   |   ├── /_/
+│   |   |   ├── /App.js
+│   |   |   └── /index.js
+|   |   ├── /MyComponent/
+|   |   |   ├── /_/
+|   |   |   |   ├── /MySubcomponent/
+|   |   |   |       ├── /__tests__/
+|   |   |   |       ├── /MySubcomponent.js
+│   |   |   |       └── /index.js
+│   |   |   ├── /App.js
+│   |   |   └── /index.js
 │   ├── /shared/
+|   |   ├── /SharedAppSpecificComponent/
+|   |       ├── /SharedAppSpecificComponent.js
+|   |       └── /index.js
 │   └── /types/
 |
 |
 ├── /lib
+|   ├── /Button/
+|       ├── /__tests__/
+|       ├── /Button.js
+|       └── /index.js
 |
-├── /tools/
+├── /tools/  //Build scripts, other tools
 ├── /node_modules/
 └── package.json
 ```
+https://github.com/kylpo/react-playbook/blob/master/component-architecture/5_Example-App-Structure.md
+
+**/lib/ explanation:**
+Every component that is not "app specific" or a *primitive component* can be a candidate to be moved to the /lib/ folder. This allows for the possible side effect of hand-rolling your own component library as you code!
+
+Primitive components are those that take in only primitives as their props and are functionally pure.
 
 #### Redux "Ducks"
 
@@ -140,6 +175,8 @@ Normalized data structures by Id (Relational Table Model)
     |   └── utils.js
 └── commonTypes.js
 ```
+
+https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be
 
 ## Best Practices and Coding Style
 
@@ -169,15 +206,33 @@ ChatConversationName - [Page/Context][ComponentName]
     - if (!app dependent i.e. primitive) Move to lib folder
 - Avoid re-rendering component if possible
 
-### Redux Work
-
-- Use Action Creators
-- Use "Duck's" pattern
-  - Details here: https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be
-
 ## Styling
 
+### Precompilers
+
+**SASS**  
+https://sass-lang.com/
+
+Gives you the ability to nest your CSS, create mixins, amoung other things.
+
+**Styled Components**  
+https://www.styled-components.com/
+
 ## Testing
+
+### Libraries
+
+**Jest**  
+https://jestjs.io/
+
+Most popular React testing library. Comes with snapshot comparisons which is very useful for testing pure components.
+
+**Sinon**  
+https://sinonjs.org/
+
+Spies, stubs and mocks
+
+### Strategies
 
 **From:** https://github.com/kylpo/react-playbook/blob/master/best-practices/react.md
 
@@ -192,7 +247,31 @@ Write component tests that accomplish the following goals (from [Getting Started
 - Test edge cases
   - e.g. something that uses an array should be thrown an empty array
 
-## Resources
+## Other Libraries
+
+### State Management Helpers
+
+**Reselect**
+https://github.com/reduxjs/reselect
+
+Creates a selector where the first functions passed in compute props for a final function. If none of those props have changed, then that function is not run and the result from the previous invocation is returned.
+
+This keeps the state from needlessly causing components to re-render.
+
+**Normalizr**
+https://github.com/paularmstrong/normalizr
+
+Especially useful for taking in schemas of data input and producing an "entities" object and a "result" object. "Entities" is of the structure above in "State Structure" where it is a normalized relational list. "Result" is the list of ids.
+
+### Form Helpers
+
+**Redux Forms**  
+https://redux-form.com/8.1.0/
+
+**Formik**  
+https://github.com/jaredpalmer/formik
+
+## Resources and Articles
 
 **Good Starting Points:**
 https://github.com/markerikson/react-redux-links/blob/master/react-architecture.md
