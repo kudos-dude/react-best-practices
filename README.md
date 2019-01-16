@@ -216,6 +216,9 @@ https://sass-lang.com/
 
 Gives you the ability to nest your CSS, create mixins, among other things.
 
+Guide for SASS in React:  
+https://hugogiraudel.com/2015/06/18/styling-react-components-in-sass/
+
 **Styled Components**  
 https://www.styled-components.com/
 
@@ -271,6 +274,29 @@ https://redux-form.com/8.1.0/
 
 **Formik**  
 https://github.com/jaredpalmer/formik
+
+### Styling
+
+**classnames**  
+https://github.com/JedWatson/classnames
+
+Takes in conditionals that returns a space-delimited string for className.
+
+```javascript
+import classnames from 'classnames';
+
+let classes = classnames('sd-date', {
+  current: date.month() === this.props.month,
+  future: date.month() > this.props.month,
+  past: date.month() < this.props.month
+});
+
+return (
+  <button className={classes} />
+
+  <button className={`button-default-style ${isActive ? "active" : ""}`} />
+);
+```
 
 ### Functional Programming Helpers
 
