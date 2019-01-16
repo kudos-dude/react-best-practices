@@ -204,7 +204,7 @@ ChatConversationName - [Page/Context][ComponentName]
   - if (component is comprised of multiple components or smaller pieces of functionality) Create container component
   - Move shared components out
     - if (app dependent) Keep in shared/MyComponent
-    - if (!app dependent i.e. primitive) Move to lib folder
+    - if (!app dependent or primitive) Move to lib folder
 - Avoid re-rendering component if possible
 
 ## Styling
