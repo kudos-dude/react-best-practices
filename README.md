@@ -322,7 +322,7 @@ https://github.com/markerikson/react-redux-links/blob/master/react-architecture.
 **Folder Structure:**  
 https://github.com/kylpo/react-playbook/blob/master/component-architecture/3_Multiple-Components.md
 
-**Presentational vs Container Components:**
+**Presentational vs Container Components:**  
 https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0
 
 **Routing:**  
