@@ -272,8 +272,12 @@ Especially useful for taking in schemas of data input and producing an "entities
 **Redux Forms**  
 https://redux-form.com/8.1.0/
 
+Uses Redux to maintain the state of your forms through custom components, abstracted actions and reducers.
+
 **Formik**  
 https://github.com/jaredpalmer/formik
+
+Creates an ephemeral state held by its components that abstracts away all the boilerplate that goes into creating and maintaining forms.
 
 ### Styling
 
@@ -314,7 +318,7 @@ Date/Time related formatting
 
 ## Resources and Articles
 
-**Good Starting Points:**
+**Good Starting Points:**  
 https://github.com/markerikson/react-redux-links/blob/master/react-architecture.md
 
 ### Topics A-Z
