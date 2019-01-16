@@ -20,7 +20,6 @@ https://reacttraining.com/react-router/web/guides/quick-start
 
 - Pure Components
   - fn(state, props) == UI
-
   - Local state suggestions from: https://medium.com/@robftw/characteristics-of-an-ideal-react-architecture-883b9b92be0b
     - No local state other than:
       - Animation/triggering of CSS Classes
