@@ -173,7 +173,7 @@ Primitive components are those that take in only primitives as their props and a
     |   ├── selectors.js
     |   ├── types.js
     |   └── utils.js
-└── commonTypes.js
+    └── commonTypes.js
 ```
 
 https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be
