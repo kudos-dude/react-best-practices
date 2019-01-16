@@ -119,7 +119,7 @@ Removes the deeply nested structures as your state grows in size and keeps compo
 │   ├── /images/
 │   ├── /videos/
 |
-├── /app
+├── /app or /src
 │   ├── /redux/  // See "Ducks"
 │   ├── /scenes/
 │   |   ├── /App/
