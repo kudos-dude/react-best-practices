@@ -251,14 +251,14 @@ Write component tests that accomplish the following goals (from [Getting Started
 
 ### State Management Helpers
 
-**Reselect**
+**Reselect**  
 https://github.com/reduxjs/reselect
 
 Creates a selector where the first functions passed in compute props for a final function. If none of those props have changed, then that function is not run and the result from the previous invocation is returned.
 
 This keeps the state from needlessly causing components to re-render.
 
-**Normalizr**
+**Normalizr**  
 https://github.com/paularmstrong/normalizr
 
 Especially useful for taking in schemas of data input and producing an "entities" object and a "result" object. "Entities" is of the structure above in "State Structure" where it is a normalized relational list. "Result" is the list of ids.
