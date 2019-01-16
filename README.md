@@ -127,13 +127,13 @@ Removes the deeply nested structures as your state grows in size and keeps compo
 │   |   |   ├── /_/
 │   |   |   ├── /App.js
 │   |   |   └── /index.js
-|   |   ├── /MyComponent/
+|   |   ├── /MyScene/
 |   |   |   ├── /_/
 |   |   |   |   ├── /MySubcomponent/
 |   |   |   |       ├── /__tests__/
 |   |   |   |       ├── /MySubcomponent.js
 │   |   |   |       └── /index.js
-│   |   |   ├── /App.js
+│   |   |   ├── /MyScene.js
 │   |   |   └── /index.js
 │   ├── /shared/
 |   |   ├── /SharedAppSpecificComponent/
