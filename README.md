@@ -213,7 +213,7 @@ ChatConversationName - [Page/Context][ComponentName]
 **SASS**  
 https://sass-lang.com/
 
-Gives you the ability to nest your CSS, create mixins, amoung other things.
+Gives you the ability to nest your CSS, create mixins, among other things.
 
 **Styled Components**  
 https://www.styled-components.com/
