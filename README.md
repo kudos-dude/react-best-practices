@@ -316,6 +316,11 @@ https://github.com/moment/moment/
 
 Date/Time related formatting
 
+**date-fns**  
+https://date-fns.org/
+
+Date/Time formatting with a functional paradigm and localization.
+
 ## Resources and Articles
 
 **Good Starting Points:**  
