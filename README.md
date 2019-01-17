@@ -391,6 +391,11 @@ https://atom.io/
 
 Another IDE that is also very popular amoung web devs.
 
+**Webstorm**  
+https://www.jetbrains.com/webstorm/
+
+A JetBrains product who also make IntelliJ and ReSharper. It's not free, but has a mix of monthly and yearly subscription options for the license.
+
 ## Roadmaps and Future Functionality
 
 **React 16.x**  
