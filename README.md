@@ -309,6 +309,10 @@ return (
 **Ramda**  
 https://github.com/ramda/ramda
 
+Emphasizes pure functional code. Functions written in Ramda are pure and side-effect free, making them easy to test. They are also automatically curried, giving you the ability to partially apply parameters and pass back a new function.
+
+Currying explanation: [Why Curry Helps](https://hughfdjackson.com/javascript/why-curry-helps/)
+
 ### Miscellaneous Helpers
 
 **Moment**  
