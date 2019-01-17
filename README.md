@@ -321,6 +321,20 @@ https://date-fns.org/
 
 Date/Time formatting with a functional paradigm and localization.
 
+## Roadmaps and Future Functionality
+
+**React 16.x**  
+https://reactjs.org/blog/2018/11/27/react-16-roadmap.html
+
+Things to look forward to:
+
+- Suspense
+  - Fallback component while a component is rendering. Abstracts need for loading gifs for instance.
+- Hooks
+  - Add state to function components. Improves optimizing at scale and removes need for "wrapper hell"
+- Concurrent
+  - Prioritize renders
+
 ## Resources and Articles
 
 **Good Starting Points:**  
