@@ -124,11 +124,6 @@ Normalized data structures by Id (Relational Table Model)
 ```
 Removes the deeply nested structures as your state grows in size and keeps components from re-rendering accidentally.
 
-Library that creates Object Relational Mapping (ORM) using the above structure:  
-
-[redux-orm](https://github.com/tommikaikkonen/redux-orm)  
-[Guide to using redux-orm and Redux structuring as a whole](https://blog.isquaredsoftware.com/series/practical-redux/)
-
 ### Folder Structure
 
 ```
@@ -231,8 +226,6 @@ ChatConversationName - [Page/Context][ComponentName]
 
 ## Styling
 
-### Precompilers
-
 **SASS**  
 https://sass-lang.com/
 
@@ -243,6 +236,8 @@ https://hugogiraudel.com/2015/06/18/styling-react-components-in-sass/
 
 **Styled Components**  
 https://www.styled-components.com/
+
+Scope your styles on a component level, directly in your JS file. Allows for computing styles at a functional level in JS rather than relying on pre-compilers.
 
 ## Testing
 
@@ -302,7 +297,7 @@ Great ESLint configs:
 [prettier-eslint](https://github.com/prettier/prettier-eslint)  
 [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)  
 
-## Other Libraries
+## Libraries
 
 ### Form Helpers
 
@@ -329,6 +324,14 @@ This keeps the state from needlessly causing components to re-render.
 https://github.com/paularmstrong/normalizr
 
 Especially useful for taking in schemas of data input and producing an "entities" object and a "result" object. "Entities" is of the structure above in "State Structure" where it is a normalized relational list. "Result" is the list of ids.
+
+**redux-orm**  
+https://github.com/tommikaikkonen/redux-orm 
+
+Library that creates Object Relational Mapping (ORM) using the aforementioned structure.
+
+Guide to using redux-orm and Redux structuring as a whole:  
+https://blog.isquaredsoftware.com/series/practical-redux/
 
 ### Styling
 
