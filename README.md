@@ -273,6 +273,35 @@ Write component tests that accomplish the following goals (from [Getting Started
 - Test edge cases
   - e.g. something that uses an array should be thrown an empty array
 
+## Build and Deploy
+
+### Starter kits
+
+https://reactjs.org/community/starter-kits.html
+
+This list contains many popular choices, but your choice is yours. Getting a good starter kit depends entirely on what you're looking to get out of your project and team.
+
+### Build Libraries
+
+**Babel**  
+https://babeljs.io/
+
+Transpiles your javascript down from the latest standards to backwards compatible, browser friendly source. Used for transpiling JSX to JS.
+
+**Webpack**  
+https://webpack.js.org/
+
+Bundles your files into static assets that are ready for production deploy. Many extensible plugins available.
+
+**ESLint**  
+https://eslint.org/
+
+Keeps your code nice and tidy by yelling at you with squigglies. You can link this to your IDE.
+
+Great ESLint configs:  
+[prettier-eslint](https://github.com/prettier/prettier-eslint)  
+[eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)  
+
 ## Other Libraries
 
 ### Form Helpers
@@ -346,6 +375,18 @@ Date/Time formatting with a functional paradigm and localization.
 https://github.com/moment/moment/
 
 Date/Time related formatting
+
+## IDEs
+
+**Visual Studio Code**  
+https://code.visualstudio.com/
+
+Microsoft has opensourced this light-weight and highly extensible IDE. My personal favorite.
+
+**Atom**  
+https://atom.io/
+
+Another IDE that is also very popular amoung web devs.
 
 ## Roadmaps and Future Functionality
 
