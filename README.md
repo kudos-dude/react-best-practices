@@ -333,7 +333,7 @@ https://reactjs.org/blog/2018/11/27/react-16-roadmap.html
 Things to look forward to:
 
 - Suspense
-  - Fallback component while a component is rendering. Abstracts need for loading gifs for instance.
+  - Fallback component while a component is rendering. E.g. abstracts need for loading gifs.
 - Hooks
   - Add state to function components. Improves optimizing at scale and removes need for "wrapper hell"
 - Concurrent
