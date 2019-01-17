@@ -27,6 +27,8 @@ https://medium.freecodecamp.org/how-to-develop-your-react-superpowers-with-the-r
 - [Functional methods](https://medium.com/dailyjs/the-state-of-immutability-169d2cd11310)
   - map/filter/reduce
     - [w3Schools array fuctions](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+- [Higher Order Components/Functions](https://medium.freecodecamp.org/higher-order-components-the-ultimate-guide-b453a68bb851)
+  - Reusability and Composition
 
 #### Pure Components
 
@@ -359,6 +361,13 @@ return (
 ```
 
 ### Functional Programming Helpers
+
+**Recompose**  
+https://github.com/acdlite/recompose
+
+A library of Higher-Order-Functions and a compose function to ease your move towards more reusable, functional components.
+
+Note: This library is no longer being updated with new features by its creator. With Hooks on the horizon, the React Development team is suggesting a move to that API.
 
 **Ramda**  
 https://github.com/ramda/ramda
