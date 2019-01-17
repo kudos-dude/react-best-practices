@@ -301,7 +301,7 @@ Great ESLint configs:
 
 ### Form Helpers
 
-**Redux Forms**  
+**Redux Forms - *Under Review***  
 https://redux-form.com/8.1.0/
 
 Uses Redux to maintain the state of your forms through custom components, abstracted actions and reducers.
@@ -405,12 +405,23 @@ Things to look forward to:
 - Concurrent
   - Prioritize renders
 
-## Resources and Articles
+## Resources, Articles and Podcasts
+
+### Podcasts
+
+**React Native Radio w/ Nadir Dabit**  
+https://devchat.tv/react-native-radio/
+
+**Syntax w/ Wes Bos and Scott Tolinski**  
+https://syntax.fm/
+
+**The React Podcast w/ Chantastic**  
+https://reactpodcast.simplecast.fm/
+
+### Articles
 
 **Good Starting Points:**  
 https://github.com/markerikson/react-redux-links/blob/master/react-architecture.md
-
-### Topics A-Z
 
 **Folder Structure:**  
 https://github.com/kylpo/react-playbook/blob/master/component-architecture/3_Multiple-Components.md
