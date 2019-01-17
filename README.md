@@ -200,7 +200,7 @@ ChatConversationName - [Page/Context][ComponentName]
 ### Component Creation
 
 - Write a stateless functional component first
-  - if (component requires state, life-cycle, or Redux) Make stateful class
+  - if (component requires state or life-cycle) Make stateful class
   - if (component is comprised of multiple components or smaller pieces of functionality) Create container component
   - Move shared components out
     - if (app dependent) Keep in shared/MyComponent
