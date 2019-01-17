@@ -8,6 +8,36 @@ Forking this repo is great if you want to create your own repo with your decisio
 
 ## Architecture
 
+### Patterns
+
+**Flux Pattern**  
+[Flux explained](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)  
+[Redux](https://redux.js.org/)
+
+**Render Props Pattern**  
+https://medium.freecodecamp.org/how-to-develop-your-react-superpowers-with-the-render-props-pattern-b74e68c6d053
+
+### Functional Paradigm
+
+#### Functional Programming
+
+- [Immutability](https://medium.com/dailyjs/the-state-of-immutability-169d2cd11310)
+  - No side-effects
+  - Predictable data
+- [Functional methods](https://medium.com/dailyjs/the-state-of-immutability-169d2cd11310)
+  - map/filter/reduce
+    - [w3Schools array fuctions](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+
+#### Pure Components
+
+- fn(state, props) == UI
+- Local state suggestions from: https://medium.com/@robftw/characteristics-of-an-ideal-react-architecture-883b9b92be0b
+  - No local state other than:
+    - Animation/triggering of CSS Classes
+    - UI control that doesn't involve business logic or dependent on other components
+    - Extremely trivial UI related variables that won't cause side effects
+    - Standalone libraries
+
 ### Routing
 
 **React Router**  
@@ -15,19 +45,6 @@ https://github.com/ReactTraining/react-router
 
 Guide:  
 https://reacttraining.com/react-router/web/guides/quick-start
-
-### Functional Paradigm
-
-- Pure Components
-  - fn(state, props) == UI
-  - Local state suggestions from: https://medium.com/@robftw/characteristics-of-an-ideal-react-architecture-883b9b92be0b
-    - No local state other than:
-      - Animation/triggering of CSS Classes
-      - UI control that doesn't involve business logic or dependent on other components
-      - Extremely trivial UI related variables that won't cause side effects
-      - Standalone libraries
-- Flux pattern (uni-directional)
-  - **Redux:** https://redux.js.org/
 
 ### State Structure
 
@@ -106,6 +123,11 @@ Normalized data structures by Id (Relational Table Model)
 }
 ```
 Removes the deeply nested structures as your state grows in size and keeps components from re-rendering accidentally.
+
+Library that creates Object Relational Mapping (ORM) using the above structure:  
+
+[redux-orm](https://github.com/tommikaikkonen/redux-orm)  
+[Guide to using redux-orm and Redux structuring as a whole](https://blog.isquaredsoftware.com/series/practical-redux/)
 
 ### Folder Structure
 
@@ -253,6 +275,18 @@ Write component tests that accomplish the following goals (from [Getting Started
 
 ## Other Libraries
 
+### Form Helpers
+
+**Redux Forms**  
+https://redux-form.com/8.1.0/
+
+Uses Redux to maintain the state of your forms through custom components, abstracted actions and reducers.
+
+**Formik**  
+https://github.com/jaredpalmer/formik
+
+Creates an ephemeral state held by its components that abstracts away all the boilerplate that goes into creating and maintaining forms.
+
 ### State Management Helpers
 
 **Reselect**  
@@ -266,18 +300,6 @@ This keeps the state from needlessly causing components to re-render.
 https://github.com/paularmstrong/normalizr
 
 Especially useful for taking in schemas of data input and producing an "entities" object and a "result" object. "Entities" is of the structure above in "State Structure" where it is a normalized relational list. "Result" is the list of ids.
-
-### Form Helpers
-
-**Redux Forms**  
-https://redux-form.com/8.1.0/
-
-Uses Redux to maintain the state of your forms through custom components, abstracted actions and reducers.
-
-**Formik**  
-https://github.com/jaredpalmer/formik
-
-Creates an ephemeral state held by its components that abstracts away all the boilerplate that goes into creating and maintaining forms.
 
 ### Styling
 
@@ -315,15 +337,15 @@ Currying explanation: [Why Curry Helps](https://hughfdjackson.com/javascript/why
 
 ### Miscellaneous Helpers
 
-**Moment**  
-https://github.com/moment/moment/
-
-Date/Time related formatting
-
 **date-fns**  
 https://date-fns.org/
 
 Date/Time formatting with a functional paradigm and localization.
+
+**Moment**  
+https://github.com/moment/moment/
+
+Date/Time related formatting
 
 ## Roadmaps and Future Functionality
 
