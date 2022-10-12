@@ -27,6 +27,7 @@ https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207
 - [Functional methods](https://medium.com/dailyjs/the-state-of-immutability-169d2cd11310)
   - map/filter/reduce
     - [w3Schools array functions](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+    - [Array Push() Methode](https://www.interviewbit.com/snippet/37969eca625210ab4137)
 - [Higher Order Components/Functions](https://medium.freecodecamp.org/higher-order-components-the-ultimate-guide-b453a68bb851)
   - Reusability and Composition
 
