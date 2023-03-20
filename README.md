@@ -1,15 +1,5 @@
 # React Best Practices
 
-**Update 11/6/20:** I have taken on a personal project with React and React Native. I will soon be updating this repo with new techniques and updated opinions from the internet on what best practices are out there.
-
-Next update will include:  
-**React Native**  
-**RxJS**  
-**SHARED Redux Model as independent repo (used in both React and React Native on the same project)**  
-**...latest and greatest in React and React Native**  
-
-Thank you for all the stars! I will do my best to make this repo live up to its title.
-
 ## Architecture
 
 ### Patterns
